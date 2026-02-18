@@ -23,18 +23,18 @@ const PortfolioSection = () => (
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
         {projects.map((p, i) => (
-          <AnimatedSection key={p.url} delay={i * 0.05}>
+          <AnimatedSection key={p.url} delay={i * 0.05} className="h-full">
             <a
               href={`https://${p.url}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="glass-card rounded-2xl p-6 hover-lift group block"
+              className="glass-card rounded-2xl p-6 hover-lift group block h-full"
             >
               <div className="flex items-start justify-between mb-3">
                 <h3 className="text-sm font-semibold text-foreground">{p.name}</h3>
-                <ExternalLink size={14} className="text-muted-foreground group-hover:text-primary transition-colors" />
+                <ExternalLink size={14} className="text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0" />
               </div>
-              <p className="text-xs text-primary font-medium">{p.url}</p>
+              <p className="text-xs text-primary font-medium break-all">{p.url}</p>
             </a>
           </AnimatedSection>
         ))}
