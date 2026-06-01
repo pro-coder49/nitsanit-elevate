@@ -4,7 +4,7 @@ import { Target, Eye, Cpu, Users } from "lucide-react";
 const techStack = ["React", "Node.js", "TypeScript", "Python", "PostgreSQL", "AWS", "Flutter", "Docker"];
 
 const team = [
-  { name: "Nitesh Pawar", role: "Founder & Lead Developer" },
+  { name: "Nitin Rahane", role: "Founder & Lead Developer" },
   { name: "Development Team", role: "Full Stack Engineers" },
   { name: "Design Team", role: "UI/UX Designers" },
   { name: "Marketing Team", role: "Digital Strategists" },
