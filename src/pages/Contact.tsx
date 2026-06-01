@@ -94,7 +94,7 @@ const Contact = () => {
                 <Phone size={20} className="text-primary flex-shrink-0 mt-0.5" />
                 <div>
                   <h4 className="text-sm font-semibold text-foreground mb-1">WhatsApp</h4>
-                  <a href="https://wa.me/919999999999" className="text-sm text-primary hover:underline">Chat with us</a>
+                  <a href="https://wa.me/919834842218" className="text-sm text-primary hover:underline">+91 98348 42218</a>
                 </div>
               </div>
 
