@@ -31,8 +31,9 @@ const Footer = () => (
         <div>
           <h4 className="text-sm font-semibold mb-4 text-primary-foreground/80">Contact</h4>
           <p className="text-sm text-primary-foreground/50 leading-relaxed">
-            Ghulewadi, Sangamner,<br />
-            Maharashtra, India
+            Near Bus Stand, State Bank of India,<br />
+            Opposite Kakad Hospital, Vidyanagar,<br />
+            Sangamner, Maharashtra, India
           </p>
           <a href="https://nitsanit.com" className="text-sm text-primary hover:underline mt-2 inline-block">
             nitsanit.com
