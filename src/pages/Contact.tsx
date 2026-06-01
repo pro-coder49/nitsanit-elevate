@@ -80,7 +80,7 @@ const Contact = () => {
                 <MapPin size={20} className="text-primary flex-shrink-0 mt-0.5" />
                 <div>
                   <h4 className="text-sm font-semibold text-foreground mb-1">Address</h4>
-                  <p className="text-sm text-muted-foreground">Ghulewadi, Sangamner, Maharashtra, India</p>
+                  <p className="text-sm text-muted-foreground">Near Bus Stand, State Bank of India, Opposite Kakad Hospital, Vidyanagar, Sangamner, Maharashtra, India</p>
                 </div>
               </div>
               <div className="glass-card rounded-2xl p-6 flex gap-4 items-start">
