@@ -6,10 +6,16 @@ const projects = [
   { name: "Shrimant Mangal Kayalay", url: "shrimantmangalkayalay.com" },
   { name: "Yuva Next Foundation", url: "yuvanextfoundation.org" },
   { name: "Rudra Milk", url: "rudramilk.com" },
+  { name: "Rudra Brand Aura", url: "rudra-brand-aura.lovable.app" },
   { name: "ACE Hospital", url: "acehospital.in" },
   { name: "EE.GE", url: "ee.ge" },
+  { name: "RPSG", url: "www.rpsg.in" },
   { name: "Pune Jilha Kusti Girsangh", url: "punejilhakustigirsangh.com" },
   { name: "Goenka Foods", url: "goenkafoods.com" },
+  { name: "Restaurant POS Desktop App", url: "nitsanit.com", category: "Desktop App" },
+  { name: "3-Star Hotel Management Suite", url: "nitsanit.com", category: "Desktop App" },
+  { name: "4-Star Hotel Management Suite", url: "nitsanit.com", category: "Desktop App" },
+  { name: "5-Star Hotel Management Suite", url: "nitsanit.com", category: "Desktop App" },
 ];
 
 const PortfolioSection = () => (
@@ -23,7 +29,7 @@ const PortfolioSection = () => (
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
         {projects.map((p, i) => (
-          <AnimatedSection key={p.url} delay={i * 0.05} className="h-full">
+          <AnimatedSection key={p.name} delay={i * 0.05} className="h-full">
             <a
               href={`https://${p.url}`}
               target="_blank"
@@ -34,6 +40,11 @@ const PortfolioSection = () => (
                 <h3 className="text-sm font-semibold text-foreground">{p.name}</h3>
                 <ExternalLink size={14} className="text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0" />
               </div>
+              {p.category && (
+                <span className="text-[10px] font-semibold tracking-wider uppercase text-primary bg-primary/10 px-2 py-0.5 rounded-full inline-block mb-2">
+                  {p.category}
+                </span>
+              )}
               <p className="text-xs text-primary font-medium break-all">{p.url}</p>
             </a>
           </AnimatedSection>
