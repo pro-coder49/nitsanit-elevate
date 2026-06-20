@@ -6,10 +6,16 @@ const projects = [
   { name: "Shrimant Mangal Kayalay", url: "shrimantmangalkayalay.com", category: "Hospitality" },
   { name: "Yuva Next Foundation", url: "yuvanextfoundation.org", category: "NGO" },
   { name: "Rudra Milk", url: "rudramilk.com", category: "Dairy" },
+  { name: "Rudra Brand Aura", url: "rudra-brand-aura.lovable.app", category: "Branding" },
   { name: "ACE Hospital", url: "acehospital.in", category: "Healthcare" },
   { name: "EE.GE", url: "ee.ge", category: "Technology" },
+  { name: "RPSG", url: "www.rpsg.in", category: "Enterprise" },
   { name: "Pune Jilha Kusti Girsangh", url: "punejilhakustigirsangh.com", category: "Sports" },
   { name: "Goenka Foods", url: "goenkafoods.com", category: "Food & Beverage" },
+  { name: "Restaurant POS Desktop App", url: "nitsanit.com", category: "Desktop App" },
+  { name: "3-Star Hotel Management Suite", url: "nitsanit.com", category: "Desktop App" },
+  { name: "4-Star Hotel Management Suite", url: "nitsanit.com", category: "Desktop App" },
+  { name: "5-Star Hotel Management Suite", url: "nitsanit.com", category: "Desktop App" },
 ];
 
 const Portfolio = () => (
@@ -31,23 +37,21 @@ const Portfolio = () => (
     <section className="section-padding pt-0">
       <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
         {projects.map((p, i) => (
-          <AnimatedSection key={p.url} delay={i * 0.06}>
+          <AnimatedSection key={p.name} delay={i * 0.06} className="h-full">
             <a
               href={`https://${p.url}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="glass-card rounded-2xl p-8 hover-lift group block"
+              className="glass-card rounded-2xl p-8 hover-lift group block h-full"
             >
               <div className="flex items-start justify-between mb-4">
-                <div>
-                  <span className="text-[10px] font-semibold tracking-wider uppercase text-primary bg-primary/10 px-2 py-1 rounded-full">
-                    {p.category}
-                  </span>
-                </div>
+                <span className="text-[10px] font-semibold tracking-wider uppercase text-primary bg-primary/10 px-2 py-1 rounded-full">
+                  {p.category}
+                </span>
                 <ExternalLink size={16} className="text-muted-foreground group-hover:text-primary transition-colors" />
               </div>
               <h3 className="text-lg font-bold text-foreground mb-1">{p.name}</h3>
-              <p className="text-sm text-primary">{p.url}</p>
+              <p className="text-sm text-primary break-all">{p.url}</p>
             </a>
           </AnimatedSection>
         ))}
