@@ -16,7 +16,7 @@ const projects = [
   { name: "3-Star Hotel Management Suite", url: "nitsanit.com", category: "Desktop App" },
   { name: "4-Star Hotel Management Suite", url: "nitsanit.com", category: "Desktop App" },
   { name: "5-Star Hotel Management Suite", url: "nitsanit.com", category: "Desktop App" },
-  { name: "Employee Attendance / HRMS System", url: "nitsanit-pixel-craft.lovable.app", category: "HRMS" },
+  { name: "Employee Attendance / HRMS System", url: "Nitsanithrms.lovable.app", category: "HRMS" },
 ];
 
 const Portfolio = () => (
